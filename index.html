@@ -9,8 +9,8 @@
 </head>
 <body>
     <header>
-        <h3>Highscores!</h3>
-        <h2>Timer: 0</h2>
+        <h3 id="highScores">Highscores!</h3>
+        <h2 id="timer">Timer: 0</h2>
     </header>
 
     <div id="landingPage">
@@ -21,6 +21,32 @@
         </p>
         <button id="startButton">Start Quiz</button>
     </div>
+
+    <div id="quizSection">
+        <h2 id="question">Question</h2>
+        <button id="answerOne">Answer 1</button>
+        <button id="answerTwo">Answer 2</button>
+        <button id="answerThree">Answer 3</button>
+        <button id="answerFour">Answer 4</button>
+    </div>
+
+    <div id="endingSection">
+        <h2> You have completed the quiz! </h2>
+        <p id="finalScore"> Your final score is: </p>
+        <form id="submit">
+            <label for="initials">Enter yout initials: </label>
+            <input id="initials" type="text" size="20">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div id="highScoreScreen">
+        <h2>HIGH SCORES</h2>
+        <ol id="scoreList">
+
+        </ol>
+    </div>
     
+    <script src="./assets/script.js"></script>
 </body>
 </html>

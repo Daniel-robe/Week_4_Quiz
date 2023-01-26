@@ -18,7 +18,7 @@ header {
 
 h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
 }
 
 #startButton {
@@ -31,4 +31,54 @@ h1 {
 
 #startButton:hover {
     background-color: #e37e6f;
+}
+
+
+#quizSection {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+#endingSection {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+#highScoreScreen {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+button{
+    border-radius: 5px;
+    width: 15%;
+    padding: 15px;
+    font-size: 20px;
+}
+
+ol{
+    justify-content: left;
+    align-content: left;
 }
