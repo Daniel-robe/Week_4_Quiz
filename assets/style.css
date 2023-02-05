@@ -33,6 +33,9 @@ h1 {
     background-color: #e37e6f;
 }
 
+#highScores:hover {
+    color: #db361d;
+}
 
 #quizSection {
     display: none;
@@ -81,4 +84,9 @@ button{
 ol{
     justify-content: left;
     align-content: left;
+}
+
+li{
+    padding: 15px;
+    font-size: 20px;
 }

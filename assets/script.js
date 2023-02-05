@@ -127,26 +127,35 @@ function endQuiz(){
 function addHighScore(event){
     event.preventDefault();
     userInitials = initalForm.value;
-    highScore = [{
-        initals: userInitials,
-        score: userScore
-    }];
+
+    if(localStorage.hasOwnProperty("highScore")){
+        highScore = JSON.parse(localStorage.getItem("highScore"));
+        highScore.push({
+            initals: userInitials,
+            score: userScore
+        });
+    } else {
+        highScore = [{
+            initals: userInitials,
+            score: userScore
+        }];
+    }
 
     localStorage.setItem("highScore", JSON.stringify(highScore));
     displayHighScores();
 }
 
 function displayHighScores(){
-    highScores = JSON.parse(localStorage.getItem(highScore));
-    console.log(highScore);
+    savedScores = JSON.parse(localStorage.getItem("highScore"));
 
-    for(var i=0; i<highScore.length; i++){
+    for(var i=0; i<savedScores.length; i++){
         var newScore = document.createElement("li");
-        newScore.textContent = highScore[i].initals + " " + highScore[i].score;
+        newScore.textContent = savedScores[i].initals + " " + savedScores[i].score;
         scoreList.appendChild(newScore);
-        console.log(newScore);
     }
 
+    landingPage.style.display = "none";
+    quizSection.style.display = "none";
     endingSection.style.display = "none";
     highScoreSection.style.display = "flex";
 }
