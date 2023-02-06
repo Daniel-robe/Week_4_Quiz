@@ -7,6 +7,10 @@ A coding quiz created using HTML, CSS, and JS. When the user navigates to the ma
 ## Links
 
 Link to the repository - https://github.com/Daniel-robe/Week_4_Quiz
-Link to the deployed site -
+Link to the deployed site - https://daniel-robe.github.io/Week_4_Quiz/
 
 ## Screenshots
+
+![Landing page](./assets/Images/landing-screenshot.JPG)
+![Question](./assets/Images/question-screenshot.JPG)
+![Ending page](./assets/Images/ending-screenshot.JPG)
